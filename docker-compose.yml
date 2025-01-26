@@ -1,4 +1,5 @@
-name: 'test-project2'
+# name: 'test-project2'
+version: '3.8'
 services:
   web:
     container_name: "web_name"
