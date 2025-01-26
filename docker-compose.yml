@@ -1,6 +1,7 @@
 # name: 'test-project2'
 version: '3.8'
 services:
+  
   web:
     container_name: "web_name"
     build:
@@ -16,6 +17,13 @@ services:
     #   - NODE_ENV=development
     depends_on:
       - api
+  nginx:
+    container_name: "nginx_name"
+    image: nginx:latest
+    ports:
+      - "80:80"
+    depends_on:
+      - web
   api:
     container_name: "api_name"
     build:
