@@ -1,0 +1,32 @@
+name: 'test-project2'
+services:
+  web:
+    container_name: "web_name"
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    # volumes:
+    #   - .:/app
+    # working_dir: /app
+    # command: npm run dev
+    # environment:
+    #   - NODE_ENV=development
+    depends_on:
+      - api
+  api:
+    container_name: "api_name"
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    # volumes:
+    #   - .:/app
+    # working_dir: /app
+    # command: npm run dev
+    # environment:
+    #   - NODE_ENV=development
+    # depends_on:
+    #   - db
