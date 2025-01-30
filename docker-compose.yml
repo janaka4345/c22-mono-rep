@@ -14,7 +14,7 @@ services:
     # command: npm run dev
     environment:
     #   - NODE_ENV=development
-      - DATA_URL=api_c
+      - DATA_URL="api_c"
     networks:
       - mynet
     depends_on:
