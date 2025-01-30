@@ -12,8 +12,9 @@ services:
     #   - .:/app
     # working_dir: /app
     # command: npm run dev
-    # environment:
+    environment:
     #   - NODE_ENV=development
+      - DATA_URL=api_c
     networks:
       - mynet
     depends_on:
