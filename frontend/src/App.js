@@ -18,7 +18,7 @@ function App() {
     //     setData(data)
     //   })
     const getData = async () => {
-      const response = await fetch('/api_c')
+      const response = await fetch('api_c')
       const data = await response.json()
       console.log(data);
       setData(data)
