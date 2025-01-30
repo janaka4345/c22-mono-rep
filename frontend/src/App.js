@@ -35,7 +35,7 @@ function App() {
       <header className="App-header">
         <pre>{JSON.stringify(data, null, 2)}</pre>
         <h1>all blogssssss</h1>
-        <h1>{process.env.DATA_URL}</h1>
+        <h1>dfdfdfdf:{process.env.DATA_URL}</h1>
         {blogs && blogs.map(blog => (
           <div key={blog.id}>{blog.title}</div>
         ))}
