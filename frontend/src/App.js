@@ -19,7 +19,7 @@ function App() {
     //   })
 
     const getData = async () => {
-      const url = process.env.DATA_URL || 'http://localhost:5000'
+      const url = process.env.DATA_URL || 'http://api_c:4000'
       const response = await fetch(url)
       const data = await response.json()
       console.log(data);
@@ -36,7 +36,7 @@ function App() {
       <header className="App-header">
         <pre>{JSON.stringify(data, null, 2)}</pre>
         <h1>all blogssssss</h1>
-        <h1>dfdfdfdf:{process.env.DATA_URL || 'http://localhost:5000'}</h1>
+        <h1>dfdfdfdf:{process.env.DATA_URL || 'http://api_c:4000'}</h1>
         <h1>dfdfdfdf:{process.env.NODE_ENV || 'NODE_ENV'}</h1>
 
         {blogs && blogs.map(blog => (
