@@ -37,6 +37,8 @@ function App() {
         <pre>{JSON.stringify(data, null, 2)}</pre>
         <h1>all blogssssss</h1>
         <h1>dfdfdfdf:{process.env.DATA_URL || 'http://localhost:5000'}</h1>
+        <h1>dfdfdfdf:{process.env.NODE_ENV || 'NODE_ENV'}</h1>
+
         {blogs && blogs.map(blog => (
           <div key={blog.id}>{blog.title}</div>
         ))}
