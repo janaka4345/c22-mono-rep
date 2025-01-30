@@ -7,6 +7,6 @@ app.get('/', (req, res) => {
   res.send({ "message": 'welcome server running yooo' });
 });
 
-app.listen(5000, () => {
-  console.log('server running on port 5000');
+app.listen(4000, () => {
+  console.log('server running on port 4000');
 });
